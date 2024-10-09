@@ -47,10 +47,15 @@ const Navbar = () => {
         </nav>
       </div>
       <div className="hidden lg:block">
-        <button className="bg-gradient-to-r from-[#104DD2] to-[#08286C] text-white text-xl font-medium px-3 py-1 rounded-xl">Login</button>
+        <button className="bg-gradient-to-r from-[#104DD2] to-[#08286C] text-white text-[20px] font-medium rounded-[10px] p-1">
+            <div className="flex items-center">
+                <div><img src="/assets/game-icons_diamonds.svg" alt="" /></div>
+                <div className="px-2">Login</div>
+            </div>
+        </button>
       </div>
       <div
-        className={`absolute top-14 left-0 w-[60%] max-w-[200px] h-screen bg-white  border-r-[0.5px] translate-x-100 transition-transform duration-300 ${
+        className={`absolute z-[100] top-14 left-0 w-[60%] max-w-[200px] h-screen bg-white  border-r-[0.5px] translate-x-100 transition-transform duration-300 ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
