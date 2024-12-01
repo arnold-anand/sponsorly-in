@@ -1,8 +1,9 @@
 import React from "react";
+import Card1 from "./feature-cards/Card1";
 
 const HomePage = () => {
   return (
-    <div className="static h-[630px]">
+    <div className="static h-[450px]">
       <h1 className="mt-[56px] px-[20px] text-2xl font-medium text-[#02073E] text-center lg:mt-24 lg:px-[200px] lg:text-6xl lg:font-semibold md:text-4xl">
         Bringing Sponsors, Artists, and Organizers Together
       </h1>
@@ -48,10 +49,14 @@ const HomePage = () => {
       </div>
       <div className="flex items-center justify-center w-full mt-12">
         <button className="bg-gradient-to-r from-[#104DD2] to-[#08286C] text-white text-[14px] w-[185px] h-[44px] rounded-[10px]">
-          Sign up for free
+         Join waitlist
         </button>
       </div>
-      <div className="absolute bottom-20 bg-gradient-to-b from-white to-[#B0D3FF] w-full h-[175px] rounded-t-[397px] from-30% -z-[100]"></div>
+
+      <div className="hidden lg:block">
+        <Card1></Card1>
+      </div>
+      <div className="absolute bottom-20 bg-gradient-to-b from-white to-[#B0D3FF] w-full h-[644px] rounded-t-[397px] from-30% -z-[100]"></div>
     </div>
   );
 };

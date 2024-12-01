@@ -7,12 +7,12 @@ import Link from "next/link";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="p-[1.4rem] flex items-center justify-between sticky top-0 bg-white lg:px-[224px]">
+    <div className="p-[1.4rem] flex items-center justify-center sticky top-0 bg-white lg:px-[224px]">
       <Link href={"/"}>
         <div className="flex items-center">
           <Image src="/assets/logo.svg" width={33} height={31.17} />
           <h1
-            class="bg-gradient-to-r from-[#378BD8] to-[#2E1658] inline-block text-transparent bg-clip-text font-bold pl-[6px]
+            className="bg-gradient-to-r from-[#378BD8] to-[#2E1658] inline-block text-transparent bg-clip-text font-bold pl-[6px]
             text-xl lg:text-2xl"
           >
             Sponsorly
@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
       </Link>
 
-      <div className="lg:hidden">
+      {/* <div className="hidden">
         <button onClick={() => setOpen(!open)}>
           <Menu width={30} height={30}></Menu>
         </button>
@@ -46,16 +46,16 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-      <div className="hidden lg:block">
+      <div className="hidden">
         <button className="bg-gradient-to-r from-[#104DD2] to-[#08286C] text-white text-[20px] font-medium rounded-[10px] p-1">
             <div className="flex items-center">
                 <div><img src="/assets/game-icons_diamonds.svg" alt="" /></div>
-                <div className="px-2">Login</div>
+                <div className="px-2">Join the waitlist</div>
             </div>
         </button>
       </div>
       <div
-        className={`absolute z-[100] top-14 left-0 w-[60%] max-w-[200px] h-screen bg-white  border-r-[0.5px] translate-x-100 transition-transform duration-300 ${
+        className={`hidden absolute z-[100] top-14 left-0 w-[60%] max-w-[200px] h-screen bg-white  border-r-[0.5px] translate-x-100 transition-transform duration-300 ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -79,7 +79,7 @@ const Navbar = () => {
             <Link href={"login"}>Login</Link>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
