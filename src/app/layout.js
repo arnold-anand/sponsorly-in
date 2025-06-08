@@ -1,6 +1,4 @@
-import Navbar from "@/components/navbar/Navbar";
-import "./globals.css";
-
+import '../styles/index.css';
 export const metadata = {
   title: "Sponsorly",
   description: "Effortless Collaboration For Extraordinary Events",
@@ -9,8 +7,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="font-poppins select-none">
-        <Navbar></Navbar>
+      <body>
         {children}
       </body>
     </html>

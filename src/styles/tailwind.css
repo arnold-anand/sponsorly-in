@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --primary-blue: #378bd8;
+    --primary-purple: #2d1658;
+    --primary-blue-600: #104dd2;
+    --primary-blue-800: #08276c;
+    --primary-blue-900: #02073e;
+    
+    /* Secondary Colors */
+    --secondary-white: #ffffff;
+    --secondary-gray: #575757;
+    --secondary-light-gray: #f3f3f3;
+    --secondary-dark-gray: #383737;
+    
+    /* Background Colors */
+    --bg-blue-50: #eef4fa;
+    --bg-gray-50: #faf8f8;
+    --bg-purple-200: #d8d1ff;
+    --bg-pink-200: #ffd1f8;
+    --bg-blue-200: #d1f4ff;
+    --bg-yellow-100: #fff1cc;
+    --bg-pink-100: #fce8ef;
+    --bg-purple-100: #f5f4fe;
+    
+    /* Border Colors */
+    --border-gray: #57575759;
+    --border-light: #57575751;
+    --border-medium: #57575772;
+    
+    /* Text Colors */
+    --text-black: #000000;
+    --text-gray: #575757;
+    --text-dark-gray: #383737;
+    --text-blue: #1a36b1;
+  }
+}
+
+@layer utilities {
+  /* Gradient Text Utilities */
+  .text-gradient-blue-purple {
+    background: linear-gradient(114deg, #378bd8 0%, #2d1658 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Gradient Background Utilities */
+  .bg-gradient-blue {
+    background: linear-gradient(151deg, #104dd2 0%, #08276c 100%);
+  }
+  
+  /* Custom Shadow Utilities */
+  .shadow-custom {
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .shadow-custom-light {
+    box-shadow: 0px 4px 4px rgba(136, 136, 136, 1);
+  }
+  
+  .shadow-custom-medium {
+    box-shadow: 0px 4px 40px rgba(136, 136, 136, 1);
+  }
+  
+  .shadow-custom-dark {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Custom Border Radius */
+  .rounded-custom {
+    border-radius: 10px 0px 10px 0px;
+  }
+  
+  .rounded-custom-reverse {
+    border-radius: 0px 10px 0px 10px;
+  }
+}
