@@ -269,7 +269,7 @@ export default function SponsorlyHomePage() {
                 </p>
                 <Button
                   onClick={handleCreateEventClick}
-                  className="bg-gradient-to-r from-[#104DD2] to-[#08286C] text-white px-8 py-3 text-xl rounded-[5px]"
+                  className="bg-gradient-to-r from-[#104DD2] to-[#08286C] text-white px-4 py-2 text-lg rounded-[5px]"
                 >
                   Create Event !
                 </Button>
@@ -280,17 +280,17 @@ export default function SponsorlyHomePage() {
         {/* Services Section */}
         <section className="py-16 px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-5xl font-medium text-black text-center mb-4">
+            <h2 className="text-xl font-medium text-black text-center mb-4">
               Our Services you will appreciate !
             </h2>
-            <p className="text-2xl text-gray-600 text-center mb-16">
+            <p className="text-sm text-gray-600 text-center mb-16">
               Comprehensive Solutions for Effortless Sponsorship and
               Collaboration
             </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="flex justify-center gap-3 flex-wrap">
               {/* Efficient Platform */}
-              <Card className="bg-gradient-to-br from-blue-200 to-blue-300 p-8 rounded-lg">
-                <div className="bg-white rounded-full w-24 h-24 flex items-center justify-center mb-8">
+              <Card className="bg-gradient-to-br from-blue-200 to-blue-300 p-2 rounded-lg w-[160px] h-[143px]">
+                <div className="bg-white rounded-full w-12 h-12 flex items-center justify-start mb-4">
                   <Image
                     src="/images/img_gradient_logo10x_1.png"
                     alt="Sponsorly Logo"
@@ -298,65 +298,65 @@ export default function SponsorlyHomePage() {
                     height={55}
                   />
                 </div>
-                <h3 className="text-4xl font-medium text-black mb-6">
+                <h3 className="text-lg font-light text-black mb-6">
                   Efficient Platform
                 </h3>
-                <p className="text-2xl text-black leading-relaxed">
+                <p className="hidden lg:block text-2xl text-black leading-relaxed">
                   Sponsorly is a centralized platform that brings colleges,
                   sponsors, and artists together for seamless collaboration and
                   event success.
                 </p>
               </Card>
               {/* Opportunities */}
-              <Card className="bg-white p-8 border border-gray-200">
-                <div className="bg-yellow-100 rounded-full w-24 h-24 flex items-center justify-center mb-8">
+              <Card className="p-2 border border-gray-200 w-[160px] h-[143px] bg-[#FFF1CC]">
+                <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <Image
                     src="/images/img_opportunity.png"
                     alt="Opportunities"
-                    width={60}
-                    height={60}
+                    width={40}
+                    height={40}
                   />
                 </div>
-                <h3 className="text-2xl font-normal text-gray-700 mb-6">
-                  Opportunities
+                <h3 className="text-lg font-light text-gray-700 mb-6">
+                  Bridging Opportunities
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="hidden lg:block text-gray-700 leading-relaxed">
                   Sponsorly aims to provide a diverse range of opportunities to
                   cater to various events, audiences, and branding goals.
                 </p>
               </Card>
               {/* Personalized Matches */}
-              <Card className="bg-white p-8 border border-gray-200">
-                <div className="bg-pink-100 rounded-full w-24 h-24 flex items-center justify-center mb-8">
+              <Card className="bg-[#FCE8E8] p-2 border border-gray-200 w-[160px] h-[143px]">
+                <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <Image
                     src="/images/img_programming.png"
                     alt="Programming"
-                    width={60}
-                    height={60}
+                    width={35}
+                    height={35}
                   />
                 </div>
-                <h3 className="text-2xl font-normal text-gray-700 mb-6">
+                <h3 className="text-lg font-light text-gray-700 mb-6">
                   Personalized Matches
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="hidden lg:block text-gray-600 leading-relaxed">
                   Personalised sponsorship recommendations based on the unique
                   needs and preferences, ensuring best possible matches.
                 </p>
               </Card>
               {/* Secure Communication */}
-              <Card className="bg-white p-8 border border-gray-200 rounded-tr-lg">
-                <div className="bg-purple-100 rounded-full w-24 h-24 flex items-center justify-center mb-8">
+              <Card className="bg-[#F5F4FE] p-2 border border-gray-200 rounded-tr-lg w-[160px] h-[143px]">
+                <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <Image
                     src="/images/img_speech_bubble.png"
                     alt="Speech Bubble"
-                    width={60}
-                    height={60}
+                    width={35}
+                    height={35}
                   />
                 </div>
-                <h3 className="text-2xl font-normal text-gray-700 mb-6">
+                <h3 className="text-lg font-light text-gray-700 mb-6">
                   Secure Communication
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="hidden lg:block text-gray-700 leading-relaxed">
                   Sponsorly provides chat features for transparent communication
                   and between parties, ensuring clear and organized
                   negotiations.
@@ -370,13 +370,13 @@ export default function SponsorlyHomePage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div>
-                <h2 className="text-5xl font-semibold text-black mb-8">
+                <h2 className="text-xl font-medium text-black mb-8">
                   How We Bring Seamless{" "}
                   <span className="bg-gradient-to-r from-blue-600 to-purple-800 bg-clip-text text-transparent">
                     Collaboration to Life
                   </span>
                 </h2>
-                <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+                <p className="text-md text-gray-600 mb-8 leading-relaxed">
                   Sponsorly is designed to streamline event planning by
                   connecting students, brands, and artists for seamless
                   collaboration. Whether it is finding sponsors, securing
@@ -386,163 +386,17 @@ export default function SponsorlyHomePage() {
                 </p>
                 <Button
                   onClick={handleSignUpClick}
-                  className="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-8 py-4 text-xl"
+                  className="bg-gradient-to-r from-blue-600 to-blue-800 text-white text-sm"
                 >
                   <Image
                     src="/images/img_gameiconsdiamonds.svg"
                     alt="Diamond Icon"
-                    width={40}
-                    height={45}
+                    width={20}
+                    height={25}
                     className="mr-3"
                   />
                   Sign Up For Free
                 </Button>
-              </div>
-              <div className="space-y-6">
-                {/* Testimonial Cards */}
-                <Card className="bg-gray-50 p-6 border border-gray-200">
-                  <h3 className="text-xl font-normal text-gray-700 mb-6">
-                    Reviewing{" "}
-                    <span className="font-medium">
-                      Different Campuses Simultaneously
-                    </span>
-                  </h3>
-                  <div className="flex items-center gap-4 mb-4">
-                    <Image
-                      src="/images/img_ellipse_27.png"
-                      alt="Josh Profile"
-                      width={60}
-                      height={60}
-                      className="rounded-full"
-                    />
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2">
-                        <h4 className="text-xl font-medium text-black">Josh</h4>
-                        <Image
-                          src="/images/img_materialsymbolsverifiedoutline.svg"
-                          alt="Verified"
-                          width={24}
-                          height={24}
-                        />
-                      </div>
-                      <p className="text-gray-600">Student Council President</p>
-                      <div className="flex items-center gap-2 mt-1">
-                        <span className="text-gray-600">Studying in</span>
-                        <span className="bg-purple-200 px-3 py-1 rounded text-black text-sm">
-                          IIT Bombay
-                        </span>
-                      </div>
-                    </div>
-                    <div className="flex gap-2">
-                      <Image
-                        src="/images/img_group_149.svg"
-                        alt="Like"
-                        width={40}
-                        height={40}
-                      />
-                      <Image
-                        src="/images/img_group_148.svg"
-                        alt="Share"
-                        width={40}
-                        height={40}
-                      />
-                    </div>
-                  </div>
-                </Card>
-                <Card className="bg-white p-6 border border-gray-200">
-                  <div className="flex items-center gap-4">
-                    <Image
-                      src="/images/img_ellipse_27_61x61.png"
-                      alt="Kiran Profile"
-                      width={61}
-                      height={61}
-                      className="rounded-full"
-                    />
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2">
-                        <h4 className="text-xl font-medium text-gray-600">
-                          Kiran Patel
-                        </h4>
-                        <Image
-                          src="/images/img_materialsymbolsverifiedoutline.svg"
-                          alt="Verified"
-                          width={24}
-                          height={24}
-                        />
-                      </div>
-                      <p className="text-gray-600">
-                        TechFest Organizing Committee
-                      </p>
-                      <div className="flex items-center gap-2 mt-1">
-                        <span className="text-gray-600">Studying in</span>
-                        <span className="bg-blue-100 px-3 py-1 rounded text-gray-600 text-sm">
-                          Delhi Technological University
-                        </span>
-                      </div>
-                    </div>
-                    <div className="flex gap-2">
-                      <Image
-                        src="/images/img_group_149_white_a700_01.svg"
-                        alt="Like"
-                        width={41}
-                        height={41}
-                      />
-                      <Image
-                        src="/images/img_group_148_gray_200.svg"
-                        alt="Share"
-                        width={41}
-                        height={41}
-                      />
-                    </div>
-                  </div>
-                </Card>
-                <Card className="bg-gray-50 p-6 border border-gray-200">
-                  <div className="flex items-center gap-4">
-                    <Image
-                      src="/images/img_ellipse_27_60x60.png"
-                      alt="Maya Profile"
-                      width={60}
-                      height={60}
-                      className="rounded-full"
-                    />
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2">
-                        <h4 className="text-xl font-medium text-black">
-                          Maya Patel
-                        </h4>
-                        <Image
-                          src="/images/img_materialsymbolsverifiedoutline_blue_700.svg"
-                          alt="Verified"
-                          width={24}
-                          height={24}
-                        />
-                      </div>
-                      <p className="text-gray-600">
-                        TechFest Organizing Committee
-                      </p>
-                      <div className="flex items-center gap-2 mt-1">
-                        <span className="text-gray-600">Studying in</span>
-                        <span className="bg-pink-200 px-3 py-1 rounded text-black text-sm">
-                          Delhi Technological University
-                        </span>
-                      </div>
-                    </div>
-                    <div className="flex gap-2">
-                      <Image
-                        src="/images/img_group_149.svg"
-                        alt="Like"
-                        width={40}
-                        height={40}
-                      />
-                      <Image
-                        src="/images/img_group_148.svg"
-                        alt="Share"
-                        width={40}
-                        height={40}
-                      />
-                    </div>
-                  </div>
-                </Card>
               </div>
             </div>
           </div>
@@ -589,16 +443,8 @@ export default function SponsorlyHomePage() {
       </main>
       {/* Footer */}
       <Footer />
-      {/* Background Rectangle */}
-      <div className="absolute bottom-0 left-0 w-full h-[440px] z-0">
-        <Image
-          src="/images/img_rectangle_49.png"
-          alt="Background Rectangle"
-          width={1728}
-          height={440}
-          className="w-full h-full object-cover"
-        />
-      </div>
+      
+      
     </div>
   );
 }
